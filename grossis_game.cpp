@@ -11,10 +11,8 @@ struct Question {
 
 std::vector<Question> questions;
 
-// Declaration for getFullAnswer function
 std::string getFullAnswer(char answerCode, const Question& question);
 
-// Function to draw a box around a message
 void drawBox(const std::string& message) {
     std::cout << "+";
     for (size_t i = 0; i < message.length() + 4; ++i) {
@@ -69,7 +67,6 @@ std::string getFullAnswer(char answerCode, const Question& question) {
 void displayQuestions() {
     int score = 0; // Initialize the score to 0
 
-    // Draw a box with the start message
     drawBox("GROSSIS'S GAME");
 
     for (const auto& question : questions) {
@@ -81,7 +78,6 @@ void displayQuestions() {
         std::cout << "C. " << question.optionC << std::endl;
         std::cout << "D. " << question.optionD << std::endl;
 
-        // Ask the user for input
         std::string userAnswer;
         while (true) {
             std::cout << "Your answer: ";
@@ -95,7 +91,6 @@ void displayQuestions() {
             }
         }
 
-        // Check if the answer is correct
         if (isAnswerCorrect(userAnswer, question)) {
             std::cout << "Correct! Well done!" << std::endl;
             score++; // Increment the score for a correct answer
@@ -104,7 +99,6 @@ void displayQuestions() {
         }
     }
 
-    // Display the final score
     std::cout << "Your final score: " << score << " out of " << questions.size() << std::endl;
 }
 
