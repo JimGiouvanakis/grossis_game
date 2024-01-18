@@ -20,3 +20,4 @@ Grossis's Game was created as a friendly challenge for friends to enjoy and comp
 
 Feel free to fork the repository, customize the questions so we all have fun with Grossis's Game!
 
+Version 1 :D 
