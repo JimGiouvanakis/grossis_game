@@ -18,5 +18,5 @@ Welcome to Grossis's Game, a simple and fun quiz game created by Jim Giouvanakis
 
 Grossis's Game was created as a friendly challenge for friends to enjoy and compete against each other in a trivia quiz. Whether you're a solo player looking to test your knowledge or a group competing for the highest score, Grossis's Game offers a delightful and engaging experience.
 
-Feel free to fork the repository, customize the questions, and challenge your friends with your own version of Grossis's Game!
+Feel free to fork the repository, customize the questions so we all have fun with Grossis's Game!
 
