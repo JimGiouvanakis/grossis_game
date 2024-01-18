@@ -20,10 +20,3 @@ Grossis's Game was created as a friendly challenge for friends to enjoy and comp
 
 Feel free to fork the repository, customize the questions, and challenge your friends with your own version of Grossis's Game!
 
-## Getting Started
-
-Follow these steps to get started with Grossis's Game:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/JimGiouvanakis/grossis_game.git
