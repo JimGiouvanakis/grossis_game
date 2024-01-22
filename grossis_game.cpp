@@ -30,14 +30,14 @@ void drawBox(const std::string& message) {
 }
 
 void addQuestions() {
-    // Initialize questions with correct answers
+//creation of the questions
     Question q1 = {"Who holds the record for the most goals scored in a single UEFA Champions League season?", 'C', "Lionel Messi", "Cristiano Ronaldo", "Robert Lewandowski", "Raul"};
     Question q2 = {"Which club has won the UEFA Champions League most times as of 2022?", 'B', "FC Barcelona", "Real Madrid", "AC Milan", "Liverpool"};
     Question q3 = {"In which city is the UEFA Champions League Final traditionally held?", 'C', "London", "Paris", "Istanbul", "Rome"};
     Question q4 = {"Who is the all-time top scorer in the history of the UEFA Champions League?", 'B', "Lionel Messi", "Cristiano Ronaldo", "Raul", "Karim Benzema"};
     Question q5 = {"Which player holds the record for the most assists in a single UEFA Champions League season?", 'B', "Lionel Messi", "Kevin De Bruyne", "Neymar", "Zinedine Zidane"};
 
-    // Add questions to the vector
+    
     questions.push_back(q1);
     questions.push_back(q2);
     questions.push_back(q3);
@@ -65,12 +65,12 @@ std::string getFullAnswer(char answerCode, const Question& question) {
 }
 
 void displayQuestions() {
-    int score = 0; // Initialize the score to 0
+    int score = 0; 
 
     drawBox("GROSSIS'S GAME");
 
     for (const auto& question : questions) {
-        // Display the question and options
+        
         std::cout << "Question: " << question.questionText << std::endl;
         std::cout << "Options: " << std::endl;
         std::cout << "A. " << question.optionA << std::endl;
@@ -85,7 +85,7 @@ void displayQuestions() {
 
             // Validate user input
             if (userAnswer.length() == 1 && (userAnswer[0] == 'A' || userAnswer[0] == 'B' || userAnswer[0] == 'C' || userAnswer[0] == 'D')) {
-                break; // Exit the loop if the input is valid
+                break; 
             } else {
                 std::cout << "Invalid input. Please choose from options A, B, C, or D." << std::endl;
             }
@@ -93,7 +93,7 @@ void displayQuestions() {
 
         if (isAnswerCorrect(userAnswer, question)) {
             std::cout << "Correct! Well done!" << std::endl;
-            score++; // Increment the score for a correct answer
+            score++; 
         } else {
             std::cout << "Incorrect. The correct answer is option " << question.correctAnswer << ": " << getFullAnswer(question.correctAnswer, question) << std::endl;
         }
